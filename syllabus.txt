@@ -1,0 +1,121 @@
+CMP 464 - Web Programming (Spring 2019)
+
+David Ashe - davidmashe@gmail.com, https://github.com/lehmanclass/webprogramming
+
+In this course, you will practice your "fullstack" web application development skills by building four projects. These projects will be exactly the kind of sample apps you can use to demonstrate your programming ability to prospective employers. Money, amirite?
+
+Required Materials: google, stackoverflow, your time & attention
+
+Suggested Materials: codecademy.com, codepen.com, css-tricks.com, stackoverflow.com, google.com
+
+Use Of Technology: You will need a computer. You will need git and node installed. I can help with this if you get really stuck.
+
+Shaming Others For Ignorance: Everyone in this class knows some things about technology. Absolutely no one knows everything (including me). Shaming others for mistakes or lack of knowledge will not be tolerated in this class. Let's build each other up, instead.
+
+Grading Policy:
+
+Project One (Web Client only): 20%
+
+Project Two (server only): 20%
+
+Project Three (build app, use external API instead of database): 20%
+
+Project Four (build fullstack app with database): 30%
+
+Attendance: 10%
+
+Attendance will be taken by sending an in-class token to my server via a curl command. 
+
+Extra credit: see below
+
+Grading Method:
+
+Each project will have five clearly defined features that I will test via an automated tool. If all tests pass, you immediately earn a 90%. Every failed test is 10% off your grade (these tests will be very, very clearly defined up front)
+
+The final 10% will be awarded if you do two of the following (5% if you do only one):
+
+-Have a Pull Request in the github repo history
+-Write five unit tests
+-Write five integration tests
+-Add CSS styling beyond what is required 
+-Use a front-end framework other than what is mandated (instead of React, use Vue or angular)
+-Deploy your project to a live URL
+-Your project solves a real person's problem (your git repo's README must describe how this is the case)
+
+If you do ALL of these, you get an extra 5% (thus you can get extra credit on every project).
+
+Asking For Help:
+
+This class tries to simulate a working software engineer environment. I love to answer questions and help students, but DO NOT ask for help before you've tried to help yourself. I reserve the right to ignore any question if you cannot describe TWO THINGS you have tried before seeking out my help.
+
+---
+
+Accommodating Disabilities
+
+Lehman College is committed to providing access to all programs and curricula to
+all students. Students with disabilities who may need classroom
+accommodations are encouraged to register with the Office of Student Disability
+Services. For more information, please contact the Office of Student Disability
+Services, Shuster Hall, Room 238, phone number, 718-960-8441.
+
+---
+
+The Academic Center for Excellence (ACE) and the Science Learning Center (SLC)
+
+The Academic Center for Excellence (ACE) and the Science Learning Center (SLC)
+are two of the tutoring centers on campus. The ACE provides appointment-based
+and drop-in tutoring in the humanities, social sciences, and writing, as well as
+general writing and academic skills workshops. The SLC provides drop-in tutoring
+for natural science courses. To obtain more information about the ACE and the
+SLC, please visit their website at http://www.lehman.edu/issp, or please call the
+ACE at 718-960-8175, and the SLC at 718-960-7707.
+
+---
+
+Course Schedule (tentative - may be adjusted, with notice, to fit needs of class)
+
+Front End
+
+September 3rd => Github, HTML
+September 5th => CSS (classes, ids, margin, border, padding)
+September 13th => more CSS (flexbox, common interactivity selectors)
+September 15th => Javascript Basics (variables, loops, functions, objects, arrays)
+September 20th => Javascript 2 (functional programing in JS, closures, currying)
+September 22nd => ES6 (classes, arrow functions, const, let, spread operator)
+September 27th => The DOM (document API, jQuery equivalents)
+September 29th => Common Browser APIs (fetch & more)
+
+October 1st => "Study Hall" (work on upcoming project, ask me questions in-class)
+October 3rd (PROJECT ONE due by midnight) => "Study Hall"
+
+Back End
+
+October 8th=> node.js 
+October 10th => Express.js (running simple servers, creating multiple endpoints)
+October 15th => REST * HTTP methods
+October 17th => express.js (routing, TLS certificates, connecting to a DB, middleware, authorization)
+October 22nd => express.js & postgres (SQL syntax, connecting to a database & running queries, transforming data)
+October 24th => Study Hall"
+October 29th  (PROJECT TWO DUE) => "Study Hall"
+
+Fullstack Part 2
+
+October 31st => React
+
+November 5th (LASY DAY TO WITHDRAW) => React (create-react-app)
+November 7th => Single Page Applications (CSS Modules, webpack)
+November 12th => non-database downstreams (hitting APIs from node.js, request npm module)
+November 14th => "Study Hall"
+November 19th (PROJECT THREE DUE BY MIDNIGHT) => "Study Hall"
+
+Fullstack Part 2
+
+November 21st => Git hub (branching, pull requests, commit messaging)
+November 26th => Writing Unit tests with jest
+November 28th => Patterns for writing integration tests
+
+December 3rd => "Study Hall"
+December 5th => "Study Hall"
+December 10th => "Study Hall"
+December 12th (PROJECT FOUR DUE BY MIDNIGHT) => "how to get your first developer job" + "Study Hall"
+
