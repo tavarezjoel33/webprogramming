@@ -21,6 +21,8 @@ HINT: you'll need to send a header with 'Content-Type: application/json'
 Does this sound like greek to you? Time to use your googling skills. Google "send http request with curl" to get started, and vary up your google search query to 
 find out more.
 
+If you've tried a few times and are still stuck, you can email me.
+
 ## Additional Practice
 
 After taking the survey, spend the rest of class brushing up on what you don't know =>
