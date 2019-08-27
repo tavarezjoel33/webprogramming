@@ -10,7 +10,7 @@ https://lehmanclass.typeform.com/to/I0BUGj
 
 Next, mark your self as having attending by using `curl`.
 
-Send a http POST to ${IP} with a JSON body identifying you:
+Send a http POST to 157.245.10.53 with a JSON body identifying you:
 
 {
 	"email": "$YOUR_LEHMAN_EMAIL_GOES_HERE"
