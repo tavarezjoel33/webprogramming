@@ -1,4 +1,4 @@
-CMP 464 - Web Programming (Spring 2019)
+CMP 464 - Web Programming (Fall 2019)
 
 David Ashe - davidmashe@gmail.com, https://github.com/lehmanclass/webprogramming
 
