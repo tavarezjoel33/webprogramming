@@ -1,10 +1,5 @@
-## DAY TWO
+## DAY THREE
 
-Thank you for sending in your survey responses! Based on those responses, please go to this repo and clone it (google how to do this if you must)
-Follow the instructions and get through as many exercises as you can before next week:
+Today we'll talk about how to mark your own attendence. Then we'll go over git, github, and HTMl basics.
 
-https://github.com/workshopper/learnyounode
-
-If you get stuck cloning the repo, this is your next best bet:
-
-https://www.codecademy.com/catalog/language/javascript
+to get your python server started, you may need `pip install flask`
