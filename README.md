@@ -1,5 +1,3 @@
-## DAY THREE
+## DAY FOUR
 
-Today we'll talk about how to mark your own attendence. Then we'll go over git, github, and HTMl basics.
-
-to get your python server started, you may need `pip install flask`
+No class today, apprently it's a Monday schedule. So I'll see you all on september 9th.
