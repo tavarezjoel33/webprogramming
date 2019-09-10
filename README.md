@@ -1,5 +1,5 @@
-## DAY FOUR
+## DAY FOUR RETRY
 
-No class today, apprently it's a Monday schedule. So I'll see you all on september 9th.
+I updated the syllabus to account for our missing day last week.
 
-i added a working HTML form example as promised. (in class i forgot the 'name' attribute, and since HTML doesn't show errors...)
+Grading standards for project one are updated and the project deadline has CHANGED.

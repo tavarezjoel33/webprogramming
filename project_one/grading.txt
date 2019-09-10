@@ -1,0 +1,9 @@
+-after i click on an element with #grading-element-one, i will find a #grading-element-one-consequence added to the DOM
+
+-after i click a link with id tag #grading-element-two, the page will redirect to a /about page. This new page should have a #grading-element-one-consequence element.
+
+-after i click a link with id tag #grading-element-three, a hidden element #grading-element-three-consequence will be present
+
+-there is a form (can be hidden) with name grading-element-four that when submitted, will POST to /form and the form payload must have truthy values for three keys: testOne, testTwo, TestThree.
+
+-there is an element with id #grading-element-five that has a css color value, that changes to a new color value when the mouse hovers over it.

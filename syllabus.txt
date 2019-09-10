@@ -77,45 +77,43 @@ Course Schedule (tentative - may be adjusted, with notice, to fit needs of class
 Front End
 
 September 3rd => Github, HTML
-September 5th => CSS (classes, ids, margin, border, padding)
-September 13th => more CSS (flexbox, common interactivity selectors)
-September 15th => Javascript Basics (variables, loops, functions, objects, arrays)
-September 20th => Javascript 2 (functional programing in JS, closures, currying)
-September 22nd => ES6 (classes, arrow functions, const, let, spread operator)
-September 27th => The DOM (document API, jQuery equivalents)
-September 29th => Common Browser APIs (fetch & more)
+September 10th => CSS (classes, ids, margin, border, padding)
+September 12th => more CSS (flexbox, common interactivity selectors)
+September 17th => Javascript Basics (variables, loops, functions, objects, arrays)
+September 19th => Javascript 2 (functional programing in JS, closures, currying)
+September 24th => ES6 (classes, arrow functions, const, let, spread operator)
+September 26th => The DOM (document API, jQuery equivalents)
 
-October 1st => "Study Hall" (work on upcoming project, ask me questions in-class)
-October 3rd (PROJECT ONE due by midnight) => "Study Hall"
+October 1st => Common Browser APIs (fetch & more)
+October 3rd => "Study Hall" (work on upcoming project, ask me questions in-class)
+October 8th => (PROJECT ONE due by midnight) => "Study Hall"
 
 Back End
 
-October 8th=> node.js 
-October 10th => Express.js (running simple servers, creating multiple endpoints)
-October 15th => REST * HTTP methods
-October 17th => express.js (routing, TLS certificates, connecting to a DB, middleware, authorization)
-October 22nd => express.js & postgres (SQL syntax, connecting to a database & running queries, transforming data)
-October 24th => Study Hall"
-October 29th  (PROJECT TWO DUE) => "Study Hall"
+October 10th=> node.js 
+October 15th => Express.js (running simple servers, creating multiple endpoints)
+October 17th => REST * HTTP methods
+October 12nd => express.js (routing, TLS certificates, connecting to a DB, middleware, authorization)
+October 24th => express.js & postgres (SQL syntax, connecting to a database & running queries, transforming data)
+October 29th => "Study Hall"
+October 31st =>  (PROJECT TWO DUE BY MIDNIGHT) => "Study Hall"
 
 Fullstack Part 2
 
-October 31st => React
+November 5th (LAST DAY TO WITHDRAW) => React
 
-November 5th (LASY DAY TO WITHDRAW) => React (create-react-app)
-November 7th => Single Page Applications (CSS Modules, webpack)
-November 12th => non-database downstreams (hitting APIs from node.js, request npm module)
-November 14th => "Study Hall"
-November 19th (PROJECT THREE DUE BY MIDNIGHT) => "Study Hall"
+November 7th => React (create-react-app)
+November 12th => Single Page Applications (CSS Modules, webpack)
+November 14th => non-database downstreams (hitting APIs from node.js, request npm module)
+November 19th => "Study Hall"
+November 21st => (PROJECT THREE DUE BY MIDNIGHT) => "Study Hall"
 
 Fullstack Part 2
 
-November 21st => Git hub (branching, pull requests, commit messaging)
-November 26th => Writing Unit tests with jest
-November 28th => Patterns for writing integration tests
+November 26th => Git hub (branching, pull requests, commit messaging)
+November 28th => Writing Unit tests with jest
+December 3rd => Patterns for writing integration tests
 
-December 3rd => "Study Hall"
 December 5th => "Study Hall"
 December 10th => "Study Hall"
-December 12th (PROJECT FOUR DUE BY MIDNIGHT) => "how to get your first developer job" + "Study Hall"
-
+December 12th (PROJECT FOUR DUE BY MIDNIGHT) => "how to get your first job" + "Study Hall"
