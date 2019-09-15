@@ -1,5 +1,5 @@
-## DAY FOUR RETRY
+## DAY SIX
 
-I updated the syllabus to account for our missing day last week.
+I updated the syllabus with more "bonus" crieteria to get a 100% or higher on projects. I will go over them today.
 
-Grading standards for project one are updated and the project deadline has CHANGED.
+Today we'll talk about javascript!
