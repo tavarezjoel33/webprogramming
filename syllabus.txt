@@ -34,7 +34,10 @@ Each project will have five clearly defined features that I will test via an aut
 
 The final 10% will be awarded if you do two of the following (5% if you do only one):
 
--Have a Pull Request in the github repo history
+-Your front end scores a 75% or above on a chrome accessibility audit
+-your CSS styling is mobile-first
+-Consume an external API
+-Use HTTPS over HTTP
 -Write five unit tests
 -Write five integration tests
 -Add CSS styling beyond what is required 
