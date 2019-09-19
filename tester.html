@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript" src="example.js"></script>
+	<script type="text/javascript">
+
+		const compareKeys = (objectOne, objectTwo) => {
+			const errors = Object.keys(objectOne).filter(key => {
+				return !(objectTwo[key] === objectOne[key]);
+			});
+			if (errors.length) {
+				return false;
+			}
+			return true;
+		};
+
+		const originalArray = ["one", "two", "three"];
+
+		class Tester {
+
+			functionOne() {
+				let array = originalArray;
+				return array;
+			}
+
+			functionTwo() {
+				const object = {
+					"bestSkittlesFlavor": "red"
+				};
+				return object;
+			}
+
+			test() {
+
+				const result1 = this.functionOne();
+				const result2 = this.functionTwo();
+
+				const expectedOne = ["three", "two", "one"];
+				const oneIsNotACopy = result1 != originalArray;
+				const expectedTwo = {
+					"bestSkittlesFlavor": "KitKats"
+				};
+				return compareKeys(result1, expectedOne) && compareKeys(result2, expectedTwo) && oneIsNotACopy;
+			}
+		}
+
+		const instance = new Tester();
+
+		console.log(`tester is correct: ${instance.test()}`);
+
+	</script>
+</body>
+</html>
