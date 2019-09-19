@@ -1,5 +1,5 @@
-## DAY THREE
+## DAY SIX
 
-Today we'll talk about how to mark your own attendence. Then we'll go over git, github, and HTMl basics.
+I updated the syllabus with more "bonus" crieteria to get a 100% or higher on projects. I will go over them today.
 
-to get your python server started, you may need `pip install flask`
+Today we'll talk about javascript!
