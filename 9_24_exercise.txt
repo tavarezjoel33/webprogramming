@@ -1,0 +1,6 @@
+- write a function that takes one argument and then prints "hello ${ARGUMENT}!"
+
+- write an array that has your three favorite foods, as strings. Then write a function that prints out all the elements of an array passed in as an argument. 
+Call your function to print your favorite foods.
+
+- turn the search input field on google RED.
