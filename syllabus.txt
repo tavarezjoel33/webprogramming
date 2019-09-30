@@ -34,16 +34,16 @@ Each project will have five clearly defined features that I will test via an aut
 
 The final 10% will be awarded if you do two of the following (5% if you do only one):
 
--Your front end scores a 75% or above on a chrome accessibility audit
--your CSS styling is mobile-first
--Consume an external API
--Use HTTPS over HTTP
+-You score 75% or above on an automated accessibility audit
+-Your CSS styling is mobile-first
+-Have a Pull Request in the github repo history (beyond the pull request you use to submit)
 -Write five unit tests
--Write five integration tests
+-Write two integration tests
 -Add CSS styling beyond what is required 
--Use a front-end framework other than what is mandated (instead of React, use Vue or angular)
+-Use a front-end framework other than what is mandated (instead of React, use Vue or angular, or use jQuery for project 1)
 -Deploy your project to a live URL
 -Your project solves a real person's problem (your git repo's README must describe how this is the case)
+-Have 4 or more pages in your project (project 1 only)
 
 If you do ALL of these, you get an extra 5% (thus you can get extra credit on every project).
 
@@ -87,21 +87,21 @@ September 19th => Javascript 2 (functional programing in JS, closures, currying)
 September 24th => ES6 (classes, arrow functions, const, let, spread operator)
 September 26th => The DOM (document API, jQuery equivalents)
 
-October 1st => Common Browser APIs (fetch & more)
+October 1st => NO CLASS
 October 3rd => "Study Hall" (work on upcoming project, ask me questions in-class)
-October 8th => (PROJECT ONE due by midnight) => "Study Hall"
+October 8th => NO CLASS
+October 10th => "Study Hall" (office hours to refine your project, ask questions)
+October 15th => (PROJECT ONE due by midnight) => "Study Hall"
 
 Back End
 
-October 10th=> node.js 
-October 15th => Express.js (running simple servers, creating multiple endpoints)
-October 17th => REST * HTTP methods
-October 12nd => express.js (routing, TLS certificates, connecting to a DB, middleware, authorization)
+October 17th => node.js, express.js, REST * HTTP methods
+October 21st => express.js (routing, middleware, authorization)
 October 24th => express.js & postgres (SQL syntax, connecting to a database & running queries, transforming data)
 October 29th => "Study Hall"
 October 31st =>  (PROJECT TWO DUE BY MIDNIGHT) => "Study Hall"
 
-Fullstack Part 2
+Fullstack Part 1
 
 November 5th (LAST DAY TO WITHDRAW) => React
 
@@ -120,3 +120,4 @@ December 3rd => Patterns for writing integration tests
 December 5th => "Study Hall"
 December 10th => "Study Hall"
 December 12th (PROJECT FOUR DUE BY MIDNIGHT) => "how to get your first job" + "Study Hall"
+
