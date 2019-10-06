@@ -45,6 +45,7 @@ The final 10% will be awarded if you do two of the following (5% if you do only 
 -Your project solves a real person's problem (your git repo's README must describe how this is the case)
 -Have 4 or more pages in your project (project 1 only)
 -install & use eslint on your project
+-use an external API & fetch to get data from it
 
 If you do ALL of these, you get an extra 5% (thus you can get extra credit on every project).
 
