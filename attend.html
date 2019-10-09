@@ -4,8 +4,9 @@
 
 		<script type="text/javascript">
 
-			const attend() = async () => {
-				window.TOKEN = '';
+			window.TOKEN = '';
+
+			const attend = async () => {
 				const options = {
 					headers: {
 						'Authorization': `Bearer ${TOKEN}`,
@@ -27,9 +28,7 @@
 					return console.log(err);
 				}
 				console.log(json);
-			}
-
-			asynchronous();
+			};
 
 		</script>
 
