@@ -1,0 +1,38 @@
+<html>
+	<body>
+
+
+		<script type="text/javascript">
+
+			const attend() = async () => {
+				window.TOKEN = '';
+				const options = {
+					headers: {
+						'Authorization': `Bearer ${TOKEN}`,
+						'Content-Type': 'application/json'
+					},
+					body: '{ "email": "david@cuny.edu" }',
+					method: 'post'
+				};
+				let response;
+				try {
+					response = await fetch('http://157.245.10.53/attend', options);
+				} catch (err) {
+					return console.log(err);
+				}
+				let json;
+				try {
+					json = await response.json();
+				} catch (err) {
+					return console.log(err);
+				}
+				console.log(json);
+			}
+
+			asynchronous();
+
+		</script>
+
+	</body>
+</html>
+
