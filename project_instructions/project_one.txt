@@ -2,8 +2,8 @@
 
 -after i click a link with id tag #grading-element-two, the page will redirect to a /about page. This new page should have a #grading-element-one-consequence element.
 
--after i click a link with id tag #grading-element-three, a hidden element #grading-element-three-consequence will be present
+-after i click an element with id tag #grading-element-three, a not-visible element #grading-element-three-consequence will be visible (hint: do not use display: none & display: block)
 
--there is a form (can be hidden) with name grading-element-four that when submitted, will POST to /form and the form payload must have truthy values for three keys: testOne, testTwo, TestThree.
+-there is a form (can be hidden) with name grading-element-four that when submitted, will POST to http://localhost:3000/form and the form payload must have truthy values for three keys: testOne, testTwo, TestThree.
 
 -there is an element with id #grading-element-five that has a css color value, that changes to a new color value when the mouse hovers over it.
