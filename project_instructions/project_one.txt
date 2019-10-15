@@ -1,6 +1,6 @@
 -after i click on an element with #grading-element-one, i will find a #grading-element-one-consequence added to the DOM
 
--after i click a link with id tag #grading-element-two, the page will redirect to a /about page. This new page should have a #grading-element-one-consequence element.
+-after i click a link with id tag #grading-element-two, the page will redirect to a /about page. This new page should have a #grading-element-two-consequence element.
 
 -after i click an element with id tag #grading-element-three, a not-visible element #grading-element-three-consequence will be visible (hint: do not use display: none & display: block)
 
