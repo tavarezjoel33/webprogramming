@@ -1,37 +1,32 @@
-<html>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
 
+    <script type="text/javascript">
+        const url = 'http://157.245.10.53/attend';
 
-		<script type="text/javascript">
+        const options = {
+            headers: {
+                'Authorization': 'Bearer projectone',
+                'Content-Type': 'application/json'
+            },
+            method: 'post',
+            body: '{"email": "joel.tavarez1@lc.cuny.edu" }'
+        };
 
-			window.TOKEN = '';
+        const promise = fetch(url, options);
 
-			const attend = async () => {
-				const options = {
-					headers: {
-						'Authorization': `Bearer ${TOKEN}`,
-						'Content-Type': 'application/json'
-					},
-					body: '{ "email": "david@cuny.edu" }',
-					method: 'post'
-				};
-				let response;
-				try {
-					response = await fetch('http://157.245.10.53/attend', options);
-				} catch (err) {
-					return console.log(err);
-				}
-				let json;
-				try {
-					json = await response.json();
-				} catch (err) {
-					return console.log(err);
-				}
-				console.log(json);
-			};
+        promise.then(response => {
+            return response.json();
+        }).then(data => {
+            console.log(data);
+        });
 
-		</script>
-
-	</body>
+        console.log(promise);
+    </script>
+    
+</body>
 </html>
-
