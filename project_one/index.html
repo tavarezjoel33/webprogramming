@@ -3,23 +3,88 @@
 <head>
 	<title>Web Development Project 1</title>
 </head>
-<body>
-	<div id="header">
-		<h1>Welcome to Project 1!</h1>
-		<h2>Click a Link below to be directed to a new page containing each problem</h2>
+<body style="background-color: magenta">
+
+		<h1 style="color: gold;">Welcome to Project 1!</h1>
+
+		<img src="images/lehman.png">
+
+		<h2 style="color: gold">Project Done by Joel Tavarez</h2>
 		<hr>
-	</div>
-
-	<h1>This is Section One:</h1>
-	<button id="#grading-element-one" onclick="addText()"> Add a Thing</input>
 
 
+	<h1 style="color: gold">This is Section One:</h1>
+	<p id="p1">This button will add text to the DOM.
+	<button id="grading-element-one" onclick="functionOne()" type="button"> Add a Thing</button>
+	</p>
 
+	<p id="p2"></p>
 
-	<div id="footer">
+	<hr>
 
+	<h1 style="color: gold">This is Section Two:</h1>
+	<p id="p3">This is an "About" Page that will redirect the webpage to a new page</p>
+	<a href="pages/about.html" id="grading-element-two"style="color: white">About</a>
+
+	<hr>
+
+	<h1 style="color: gold">This is Section Three:</h1>
+	<p>Below is a hidden text that will only appear when you press this button:</p>
+	<button onclick="functionTwo()" id="grading-element-three">Click me to Reveal the Truth</button>
+	<p style="visibility: hidden; color: white" id="grading-element-three-consequence">CSS and Javascript in one HTML is not the best way to make a webpage...duh</p>
+
+	<hr>
+
+	<h1 style="color: gold">This is Section Four:</h1>
+	<p>This is a form that will POST to the instructors LocalHost and return three truth values</p>
+
+	<form action="http://localhost:3000/form" method="POST" name="grading-element-four">
 		
-	</div>
-<script type="text/javascript" src="script.js"></script>
+		<input type="text" name="testOne" required value="testOne Truthy Value">
+		<input type="text" name="testTwo" required value="testTwo Truthy Value">
+		<input type="text" name="testThree" required value="testThree Truthy Value">
+		<input type="submit" name="POST_to_Server">
+
+	</form>
+
+	<hr>
+
+	<h1 style="color: gold">This is Section Five</h1>
+	<p>This is a STRING when hovered over, it will turn GOLD:</p>
+
+	<p id="grading-element-five" onmouseover="functionThree()">DO NOT HOVER over this string, or else it will turn GOLD!</p>
+
+	<hr>
+
+	<a href="pages/q1.html"class="extra-credit-page"style="color: white">Page 1</a>
+	<a href="pages/q2.html"class="extra-credit-page"style="color: white">Page 2</a>
+	<a href="pages/q3.html"class="extra-credit-page"style="color: white">Page 3</a>
+	<a href="pages/q4.html"class="extra-credit-page"style="color: white">Page 4</a>
+
+	<script type="text/javascript">
+
+		function functionOne(){
+			const addedText = document.createElement("p");
+			addedText.setAttribute("id","grading-element-one-consequence")
+
+			const textContent = document.createTextNode("This is a new line of text");
+
+			addedText.appendChild(textContent);
+
+			const nextPara = document.getElementById("p2");
+			document.body.insertBefore(addedText, p2);
+		}
+
+		function functionTwo(){
+			document.getElementById("grading-element-three-consequence").style.visibility = "visible";
+
+		}
+
+		function functionThree(){
+			document.getElementById("grading-element-five").style.color = "gold";
+		}
+	</script>
+
+
 </body>
 </html>
