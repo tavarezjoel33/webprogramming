@@ -1,9 +1,47 @@
 -after i click on an element with #grading-element-one, i will find a #grading-element-one-consequence added to the DOM
 
--after i click a link with id tag #grading-element-two, the page will redirect to a /about page. This new page should have a #grading-element-two-consequence element.
+-after i click a link with id tag #grading-element-two, the page will redirect to a /about page. This new page should have a #grading-element-one-consequence element.
 
 -after i click an element with id tag #grading-element-three, a not-visible element #grading-element-three-consequence will be visible (hint: do not use display: none & display: block)
 
--there is a form (can be hidden) with name grading-element-four that when submitted, will POST to http://localhost:3000/form and the form payload must have truthy values for three keys: testOne, testTwo, TestThree.
+-there is a form (can be hidden) with name grading-element-four that when submitted, will POST to `http://localhost:3000/form` and the form payload must have truthy values for three keys: testOne, testTwo, TestThree.
 
 -there is an element with id #grading-element-five that has a css color value, that changes to a new color value when the mouse hovers over it.
+
+---- HOW TO TEST PROJECT ONE YOURSELF ----
+
+You can test each test by following (in sequence) each of the steps below:
+
+One ->
+
+- While on page `project_one/index.html`, `document.querySelector('#grading-element-one-consequence');` should return `null`;
+- Next, run `document.querySelector('#grading-element-one').click();`
+- `document.querySelector('#grading-element-one-consequence');` should now return an element.
+
+Two ->
+
+- While on page `project_one/index.html`, `document.querySelector('#grading-element-two');` should return an `<a>` tag element.
+- Next, run `document.querySelector('#grading-element-two').click();`
+- The page should go to `project_one/about.html`
+- On `project_one/about.html`, `document.querySelector('#grading-element-two-consequence');` should return an element.
+
+Three ->
+
+- While on page `project_one/index.html`, `document.querySelector('#grading-element-three');` should return an element.
+- Next, run `getComputedStyle(document.querySelector('#grading-element-three-consequence'))['visibility']`. It should return 'hidden'.
+- Next run `document.querySelector('#grading-element-three').click()`;
+- Run `getComputedStyle(document.querySelector('#grading-element-three-consequence'))['visibility']`. It should return 'visible'.
+
+Four ->
+
+- While on page `project_one/index.html`, run `document.querySelector('form[name="grading-element-four"]')`. It should return a form element.
+- Make sure in your 'network' tab of the developer tabs, "Preserve log" is checked.
+- Next, run `document.querySelector("form[name="grading-element-four"]").submit();`
+- The page should go to `/project_one/form` and fail.
+- In the develoepr tools, the network tab should show a failed `POST` to `/form`. The request payload should have `testOne=${truthyValue}&testTwo=${truthyValue}&testThree=${truthyValue}`
+
+Five ->
+
+- While on page `project_one/index.html`, `document.querySelector('#grading-element-five');` should return an element.
+- When hovering over that element, it should visibily change color.
+
