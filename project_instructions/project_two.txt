@@ -1,0 +1,36 @@
+Test ONE:
+
+- When I send a GET request to `localhost:3000/test_one?fruit=${fruit}&cake=${cake}` i should get back:
+	`{ "message": { "fruitMessage": ${fruit}, "cakeMessage": ${cake} } }`
+
+Test TWO:
+
+- given this JSON body: `{ "fruit": ${aFruit}, "cake": ${aCake} }`
+- and given the correct headers
+- When I send a POST request to `localhost:3000/test_two`, the headers from previous step, and the body from the previous step, i should get back:
+	`{ "message": { "fruitMessage": "i love to eat ${aFruit} with ${aCake}" }` 
+
+Test THREE:
+- Given a a header of `Authorization: Bearer projecttwo`
+- When I send a GET request to `localhost:3000/test_three/${aFruit}/${aCake}`, with the above headers, i should get back:
+	`{ "message": { "you sent ${aFruit} and ${aCake}, but I only eat ${aCake}!" }`
+- If I send an incorrect token in the headers, i should get: `{ "message": { "unauthorized" }`
+
+Test FOUR:
+
+- given this form body: "fruit=${aFruit}&cake=${aCake}"
+- and given the correct headers
+- When I send a POST request to `localhost:3000/test_four`, the headers from previous step, and the body from the previous step, i should get back:
+	`{ "message": i am getting really sick of eating ${aFruit} after filling up on ${aCake}" }`
+
+Test FIVE: (i will provide a fake database class for this)
+
+- given this json body: "{ "fruit": ${aFruit}, "cake": ${aCake} "
+- and given the correct headers
+- When I send a PUT request to `localhost:3000/test_five/write`, the headers from previous step, and the body from the previous step, i should get back:
+	`{ "message": i get really sick eating some ${aFruit} after filling up on ${aCake}" }`
+- If I then send a GET request to `localhost:3000/test_five/read?fruit=${aFruit}&cake=${aCake}` I get back:
+	`{ "cakeCount": 1, "fruitCount": 1 }`
+- If I send the same PUT request again exactly as before...
+- If I send a GET request to `localhost:3000/test_five/read?fruit=${aFruit}&cake=${aCake}` a second time, I get back:
+	`{ "cakeCount": 2, "fruitCount": 2 }`
