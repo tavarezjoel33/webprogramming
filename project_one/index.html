@@ -4,22 +4,135 @@
 	<title>Web Development Project 1</title>
 </head>
 <body>
-	<div id="header">
-		<h1>Welcome to Project 1!</h1>
-		<h2>Click a Link below to be directed to a new page containing each problem</h2>
+
+<!-- HEADER -->
+
+	<div style="text-align: center; background-color: lightgrey;">
+
+		<img src="images/lehman.png">
+
+		<h1 style="color: gold; text-decoration: underline;">Welcome to Project 1!</h1>
+
+		<h2 style="color: gold;">Project Done by <a href="https://www.linkedin.com/in/joel-tavarez/">Joel Tavarez</a></h2>
+
 		<hr>
+
 	</div>
 
-	<h1>This is Section One:</h1>
-	<button id="#grading-element-one" onclick="addText()"> Add a Thing</input>
+<!-- SECTION I -->
+
+	<h1 style="color: gold; background-color: blue;">This is Section One:</h1>
+	<p style = "text-align: center" id="p1">This button will add text to the DOM.
+	<button id="grading-element-one" onclick="functionOne()" type="button"> Add a Thing</button>
+	</p>
+
+	<p id="p2"></p>
+
+	<hr>
 
 
+<!-- SECTION II -->
 
+	<div style="background-color: lightgreen;">
 
-	<div id="footer">
+	<h1 style="color: gold; background-color: red;">This is Section Two:</h1>
 
+	<div style="text-align: center;">
+	<p id="p3">This is an "About" Page that will redirect the webpage to a new page</p>
+	<a href="pages/about.html" id="grading-element-two"style="color: blue;">About</a>
+	</div>
+
+	<hr>
+
+	</div>
+
+<!-- SECTION III -->
+
+	<div style="background-color: aquamarine">
+
+	<h1 style="color: gold; background-color: violet;">This is Section Three:</h1>
+
+	<div style="text-align: center;">
+	<p>Below is a hidden text that will only appear when you press this button:</p>
+	<button onclick="functionTwo()" id="grading-element-three">Click me to Reveal the Truth</button>
+	<p style="visibility: hidden; color: red; text-align: center;" id="grading-element-three-consequence">CSS and Javascript in one HTML is not the best way to make a webpage...duh</p>
+	</div>
+
+	<hr>
+
+	</div>
+
+<!-- SECTION IV -->
+
+	<div style="background-color: yellowgreen;">
+
+	<h1 style="color: gold; background-color: purple;">This is Section Four:</h1>
+
+	<div style="text-align: center;">
+	<p>This is a form that will POST to the instructors LocalHost and return three truth values</p>
+
+	<form action="http://localhost:3000/form" method="POST" name="grading-element-four">
 		
+		<input type="text" name="testOne" required value="testOne Truthy Value">
+		<input type="text" name="testTwo" required value="testTwo Truthy Value">
+		<input type="text" name="testThree" required value="testThree Truthy Value">
+		<input type="submit" name="POST_to_Server">
+
+	</form>
 	</div>
-<script type="text/javascript" src="script.js"></script>
+
+	<hr>
+
+	</div>
+
+<!-- SECTION V -->
+
+	<div style="background-color: royalblue;">
+
+	<h1 style="color: gold; background-color: tan;">This is Section Five:</h1>
+	<p>This is a STRING when hovered over, it will turn <mark style="text-decoration-color: gold;">GOLD:</mark></p>
+
+	<div style="text-align: center; background-color: black;">
+	<p id="grading-element-five" onmouseover="functionThree()">When you HOVER over this string, or it will turn into SOLID GOLD!</p>
+	</div>
+
+	<hr>
+
+	</div>
+
+<!-- EXTRA CREDIT PAGES -->
+
+	<div style="text-align: center;">
+	<a href="pages/q1.html"class="extra-credit-page"style="color: blue">Page 1</a>
+	<a href="pages/q2.html"class="extra-credit-page"style="color: blue">Page 2</a>
+	<a href="pages/q3.html"class="extra-credit-page"style="color: blue">Page 3</a>
+	<a href="pages/q4.html"class="extra-credit-page"style="color: blue">Page 4</a>
+	</div>
+
+<!-- FUNCTIONS -->
+
+	<script type="text/javascript">
+
+		function functionOne(){
+			const addedText = document.createElement("p");
+			addedText.setAttribute("id","grading-element-one-consequence")
+
+			const textContent = document.createTextNode("This is a new line of text");
+
+			addedText.appendChild(textContent);
+
+			const nextPara = document.getElementById("p2");
+			document.body.insertBefore(addedText, p2);
+		}
+
+		function functionTwo(){
+			document.getElementById("grading-element-three-consequence").style.visibility = "visible";
+
+		}
+
+		function functionThree(){
+			document.getElementById("grading-element-five").style.color = "gold";
+		}
+	</script>
 </body>
 </html>
