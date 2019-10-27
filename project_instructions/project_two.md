@@ -18,14 +18,14 @@ Test THREE:
 
 Test FOUR:
 
-- given this form body: "fruit=${aFruit}&cake=${aCake}"
+- given this form body: `"fruit=${aFruit}&cake=${aCake}"`
 - and given the correct headers
 - When I send a POST request to `localhost:3000/test_four`, the headers from previous step, and the body from the previous step, i should get back:
 	`{ "message": "i am getting really sick of eating ${aFruit} after filling up on ${aCake}" }`
 
 Test FIVE: (i will provide a fake database class for this)
 
-- given this json body: "{ "fruit": ${aFruit}, "cake": ${aCake}"
+- given this json body: `"{ "fruit": ${aFruit}, "cake": ${aCake}"`
 - and given the json content headers
 - When I send a PUT request to `localhost:3000/test_five/write`, the headers from previous step, and the body from the previous step, i should get back:
 	`{ "message": "you sent ${aFruit} and ${aCake}" }`
@@ -47,7 +47,7 @@ Test One:
 Test Two:
 
 `curl -d '{ "fruit": "kiwi", "cake": "sponge" }' -H 'Content-Type: application/json' 'localhost:3000/test_two'` should return ->
-{ "message": "i love to eat kiwi with sponge" }
+`{ "message": "i love to eat kiwi with sponge" }`
 
 Test Three:
 
