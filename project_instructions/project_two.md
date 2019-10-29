@@ -1,3 +1,5 @@
+NOTE: i will start your server from your fork by calling `node/project_two/index.js`. You must tell me otherwise in a `project_two/README.md` if this will not work!
+
 Test ONE:
 
 - When I send a GET request to `localhost:3000/test_one?fruit=${fruit}&cake=${cake}` i should get back:
