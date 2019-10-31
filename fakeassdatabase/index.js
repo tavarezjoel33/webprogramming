@@ -4,7 +4,7 @@ class FakeAssDatabase {
 		this.data = {};
 	}
 
-	create(keyString, valueString) {
+	create(keyString, valueString) { // OOPS - the value should be a number
 		if (this.data[keyString]) {
 			throw new Error(`${keyString} already exists!`);
 		}
@@ -15,7 +15,7 @@ class FakeAssDatabase {
 		return this.data[keyString];
 	}
 
-	update(keyString, valueString) {
+	update(keyString, valueString) { // public service announcement - value is a number
 		if (!this.data[keyString]) {
 			throw new Error(`${keyString} does not exist!`);
 		}
