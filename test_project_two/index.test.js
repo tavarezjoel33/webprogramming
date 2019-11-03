@@ -44,11 +44,11 @@ const getAuthorizationHeader = token => ({ 'Authorization': `Bearer ${token}` })
 const JSON_HEADER = { 'Content-Type': 'application/json' };
 const FORM_HEADER = { 'Content-Type': 'application/x-www-form-urlencoded' };
 
-const getExpectedOne = (fruit, cake) => `{ "message": { "fruit": "${fruit}", "cake": "${cake}" } }`;
-const getExpectedTwo = (fruit, cake) => `{ "message": "i love to eat ${fruit} with ${cake}" }`;
-const getExpectedThree = (fruit, cake) => `{ "message": "you sent ${fruit} and ${cake}, but I only eat ${cake}!" }`;
-const getExpectedFour = (fruit, cake) => `{ "message": "i am getting really sick of eating ${fruit} after filling up on ${cake}" }`;
-const getExpectedFive = (fruit, cake) => `{ "message": "you sent ${fruit} and ${cake}" }`;
+const getExpectedOne = (fruit, cake) => `{"message":{"fruit":"${fruit}","cake":"${cake}"}}`;
+const getExpectedTwo = (fruit, cake) => `{"message":"i love to eat ${fruit} with ${cake}"}`;
+const getExpectedThree = (fruit, cake) => `{"message":"you sent ${fruit} and ${cake}, but I only eat ${cake}!"}`;
+const getExpectedFour = (fruit, cake) => `{"message":"i am getting really sick of eating ${fruit} after filling up on ${cake}"}`;
+const getExpectedFive = (fruit, cake) => `{"message":"you sent ${fruit} and ${cake}"}`;
 
 const fruit = 'fruit';
 const cake = 'fruitcake';
