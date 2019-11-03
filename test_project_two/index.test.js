@@ -38,7 +38,7 @@ const request = require('request-promise-native');
 // };
 
 const LOCALHOST = 'http://localhost:3000';
-const UNAUTHORIZED = '{ "message": "unauthorized"}';
+const UNAUTHORIZED = '{"message":"unauthorized"}';
 
 const getAuthorizationHeader = token => ({ 'Authorization': `Bearer ${token}` });
 const JSON_HEADER = { 'Content-Type': 'application/json' };
@@ -90,19 +90,25 @@ const testThree = async (done) => {
 		},
 		method: 'GET'
 	};
-	let response = await request(requestOptions);
+	let response;
+	
+	response = await request(requestOptions);
 	let expected = getExpectedThree(fruit, cake); 
 	expect(response).toEqual(expected);
 
-	// requestOptions = {
-	// 	uri: `${LOCALHOST}/test_three/${fruit}/${cake}`,
-	// 	headers: {
-	// 		...getAuthorizationHeader('wrong')
-	// 	},
-	// 	method: 'GET'
-	// };
-	// response = await request(requestOptions);
-	// expect(response).toEqual(UNAUTHORIZED);
+	requestOptions = {
+		uri: `${LOCALHOST}/test_three/${fruit}/${cake}`,
+		headers: {
+			...getAuthorizationHeader('wrong')
+		},
+		method: 'GET'
+	};
+	try {
+		response = await request(requestOptions);
+	} catch (e) {
+		console.log(e.error);
+		expect(e.error).toEqual(UNAUTHORIZED);
+	}
 
 	done();
 };
