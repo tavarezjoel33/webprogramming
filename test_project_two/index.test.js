@@ -50,9 +50,11 @@ const getExpectedThree = (fruit, cake) => `{ "message": "you sent ${fruit} and $
 const getExpectedFour = (fruit, cake) => `{ "message": "i am getting really sick of eating ${fruit} after filling up on ${cake}" }`;
 const getExpectedFive = (fruit, cake) => `{ "message": "you sent ${fruit} and ${cake}" }`;
 
+const fruit = 'fruit';
+const cake = 'fruitcake';
+const secondCake = 'chocolate';
+
 const testOne = async (done) => {
-	const fruit = 'fruit';
-	const cake = 'fruitcake';
 	const requestOptions = {
 		uri: `${LOCALHOST}/test_one?fruit=${fruit}&cake=${cake}`,
 		method: 'GET'
@@ -64,8 +66,6 @@ const testOne = async (done) => {
 };
 
 const testTwo = async (done) => {
-	const fruit = 'fruit';
-	const cake = 'fruitcake';
 	const requestOptions = {
 		uri: `${LOCALHOST}/test_two`,
 		headers: {
@@ -81,8 +81,6 @@ const testTwo = async (done) => {
 };
 
 const testThree = async (done) => {
-	const fruit = 'fruit';
-	const cake = 'fruitcake';
 	let requestOptions = {
 		uri: `${LOCALHOST}/test_three/${fruit}/${cake}`,
 		headers: {
@@ -106,7 +104,6 @@ const testThree = async (done) => {
 	try {
 		response = await request(requestOptions);
 	} catch (e) {
-		console.log(e.error);
 		expect(e.error).toEqual(UNAUTHORIZED);
 	}
 
@@ -114,8 +111,6 @@ const testThree = async (done) => {
 };
 
 const testFour = async (done) => {
-	const fruit = 'fruit';
-	const cake = 'fruitcake';
 	const requestOptions = {
 		uri: `${LOCALHOST}/test_four`,
 		headers: {
@@ -131,9 +126,6 @@ const testFour = async (done) => {
 };
 
 const testFive = async (done) => {
-	const fruit = 'fruit';
-	const cake = 'fruitcake';
-	const secondCake = 'chocolate';
 
 	let requestOptions = {
 		uri: `${LOCALHOST}/test_five/write`,
