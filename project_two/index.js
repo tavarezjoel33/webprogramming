@@ -31,7 +31,7 @@ app.post('/test_two', (req, res) => {
     const { fruit , cake } = req.body;
 
     res.json({
-        message: `I love to eat ${fruit} with ${cake}!`
+        message: `i love to eat ${fruit} with ${cake}`
     });
 });
 
@@ -49,7 +49,7 @@ app.get('/test_three/:fruit/:cake', (req, res) => {
 
 app.post('/test_four', (req, res) => {
     const { fruit , cake } = req.body;
-    return res.json({ message: `I am getting really sick of eating ${fruit} after filling up on ${cake}`});
+    return res.json({ message: `i am getting really sick of eating ${fruit} after filling up on ${cake}`});
 });
 
 //---------------------- TEST_FIVE ----------------------
