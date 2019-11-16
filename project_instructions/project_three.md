@@ -12,7 +12,7 @@ I will load your front end code at `localhost:3000/`.
 
 YOU WILL NEED TO GET A GIPHY API TOKEN. Register for one here:
 
-https://developers.giphy.com/docs/api/
+https://developers.giphy.com/docs/api/ (Click on 'create an app')
 
 Test ONE (back end):
 
