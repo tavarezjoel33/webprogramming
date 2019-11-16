@@ -10,6 +10,9 @@ For this project you will build both a front end and back end. Your server will 
 
 I will load your front end code at `localhost:3000/`.
 
+YOU WILL NEED TO GET A GIPHY API TOKEN. Register for one here:
+
+https://developers.giphy.com/docs/api/
 
 Test ONE (back end):
 
