@@ -38,7 +38,7 @@ Test FOUR (front end):
 
 Test FIVE (front end):
 
-- I run `document.querySelectorAll('.gif-result-display').click()`
+- I run `document.querySelector('.gif-result-display').click()`
 - `document.querySelectorAll('.gif-focus-display')` should return exactly one element.
 - `document.querySelectorAll('.gif-result-display')` should return zero elements.
 

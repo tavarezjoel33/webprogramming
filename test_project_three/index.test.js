@@ -41,7 +41,7 @@ const testTwo = async (done) => {
 	done();
 };
 
-describe('project_two tests', () => {
+describe('project_three tests', () => {
 	test('testOne', testOne);
 	test('testTwo', testTwo);
 });
