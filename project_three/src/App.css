@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -19,4 +19,61 @@
 
 .App-link {
   color: #09d3ac;
+} */
+body {
+  background-color: #4cbb17;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.header {
+  background-image: linear-gradient(
+    to right top,
+    #002366,
+    #002366,
+    #002366,
+    #002366,
+    #002366
+  );
+  color: white;
+  text-align: center;
+  padding: 0.1rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#gif-search-input {
+  padding: 0.3rem 0;
+  width: 350px;
+  font-size: 1.3rem;
+  outline: 0;
+  border-color: red;
+}
+
+#gif-search-submit {
+  width: 100px;
+  font-size: 1.2rem;
+  background-color: #002366;
+  color: white;
+}
+
+.gif-result-display {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.gif-focus-display {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #002366;
 }
