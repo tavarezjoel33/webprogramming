@@ -7,7 +7,7 @@ Requirements:
 - It uses a front end Single-Page Application framework like React.
 - It has a server (express or something else for xtra credit) that serves the front end and exposes APi endpoints.
 - it uses a postgres database to persist data (Use elephantSQL).
-- You email me by 11/26 with your proposed app idea.
+- You email me by 12/3 with your proposed app idea.
 - I can launch your app by running: 
 	`cd webprogramming/project_four`
 	`npm i`
